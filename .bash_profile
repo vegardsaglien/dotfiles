@@ -10,21 +10,13 @@ xterm*|rxvt*)
     ;;
 esac
 
-
 # Export variables
 export TERM=xterm-256color
 
 # Aliases
-alias edit='mcedit'
 alias ls='ls --color=auto'
 alias ll='ls -la'
-alias df='df -H'
-alias untar='tar -zxvf'
 alias wget='wget -c'
-alias genpass='openssl rand -base64 20'
-alias wol='/usr/bin/wakeonlan'
-alias ipconfig='ifconfig'
-
 
 # Unraid spesific
 alias unraid-start='wget -qO /dev/null http://localhost:$(lsof -nPc emhttp | grep -Po "TCP[^\d]*\K\d+")/update.htm?cmdStart=Start'
